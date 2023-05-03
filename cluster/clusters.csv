@@ -1,0 +1,398 @@
+Index,0,1,2
+0,1,@tiruk007 Having the same issue. CUDA 11.8 and cuDNN 8.6,Having the same issue.
+1,1,"Good evening,
+Since yesterday I am having the same issue when executing the first cell of the TensorFlow Segmentation tutorial: https://www.tensorflow.org/tutorials/images/segmentation. No issues before yesterday. Restarting Colab does not solve the issue for me.
+Regards,
+Federico","""Having the same issue"""
+2,1,"Yes, I have also tested it on tf2.11, the same issue persists. I believe there has been no change in elementwise parser by commit history in nightly, so I don’t think testing is required there.","I have also tested it on tf2.11, the same issue persists."
+3,1,"Hi @SuryanarayanaY i import tensorflow_io, but i have same error
+![image](https://user-images.githubusercontent.com/42681293/224332891-1ba72ff8-78b7-4928-bf46-80a3257cb63e.png)","""i have same error"""
+4,1,"The CI failed, but it doesn't seem related.","The CI failed, but it doesn't seem related."
+5,1,"I was not able to reproduce the issue again, I'll create a new issue if I get it again.",I was not able to reproduce the issue again
+6,1,"Not even related @gaikwadrahul8. The examples you referenced refer to training, whereas my issue is related to XLA-compiling an off-the-shelf function (in this case which involves a model). > tf.config.optimizer.set_jit(True) or tf.config.optimizer.set_jit('autoclustering')
+These two are applied when there's XLA compilation involved in the optimization process, but that is not the case here.",Not even related
+7,1,* i have NOT reproduced with tf nightly,i have NOT reproduced with tf nightly.
+8,1,"When you run the colab above (TF 2.11) it still is reproducing the issue
+Also, the [documentation ](https://www.tensorflow.org/api_docs/python/tf/keras/backend)doesn't mention in_train_phase anymore. Is it deprecated?","""When you run the colab above (TF 2.11) it still is reproducing the issue"""
+9,1,"Hi all, I just ran through the instructions of https://github.com/Bahar-BM/test_openCL with cmake version=3.25.1 & NDK version=22.0.7026061. I ran into the following error when I ran `make`:
+[openCL_inf_error_output.txt](https://github.com/tensorflow/tensorflow/files/10819243/openCL_inf_error_output.txt)
+Please advise. Perhaps a different NDK version needs to be used?","""I ran into the following error when I ran make:"""
+10,1,This isn't upstreamed. Why is this closed? Current master branch still doesn't compile with gcc 12.,"""Why is this closed?"""
+11,1,"Internal error is a valid error message if arguments are invalid.
+In this case, you are trying to run a kernel on a device that does not support it with the given types","""Internal error"""
+12,1,This problem still persist. Can someone help reopen this issue?,This problem still persist.
+13,1,"@gbaned there was failed ci.
+Is there anything to do?",there was failed ci.
+14,1,"Hi @SuryanarayanaY, my question is related to CUDA 12, yet your conda example is using cuda 11.2.","""My question is related to CUDA 12, yet your conda example is using cuda 11.2.."""
+15,1,I'm having the same issue,I'm having the same issue.
+16,1,"> Could you please help fix the [PyLint error](https://github.com/tensorflow/tensorflow/actions/runs/3949051506/jobs/6759788729)?
+> > ```
+> tensorflow/dtensor/python/tests/test_util.py:278:0: C0301: Line too long (81/80) (line-too-long)
+> ```
+@penpornk Pushed the Fix for pylint error.","""PyLint error"""
+17,1,"@milpuz01 is this still active? If not, we should close it.","""If not, we should close it."""
+18,1,"@kamil5b ,
+The CUDA Driver version (528.02) may not compatible with the CUDA library i.e CUDA-11.2 here. You may try to install Driver version compatible with CUDA 11.2 library from [here](https://www.nvidia.com/Download/index.aspx). For example Driver Version 470.161.03 may be suitable for CUDA 11.2-11.4. Please try this and let us know if it works.",The CUDA Driver version (528.02) may not compatible with the CUDA library i.e CUDA-11.2 here.
+19,1,"> @nimashiri I tried to replicate the issue in tf-nightly and faced a different outcome. Could you please find the gist [here](https://colab.research.google.com/gist/sushreebarsa/b60efc6c4782d3f1bc719f596eedbc7a/59174.ipynb) and confirm the same? Thank you!
+This issue is for 2.10.",I tried to replicate the issue in tf-nightly and faced a different outcome.
+20,1,"@nitins17 I had tried 11.8 + 8.7 and got the same error. Do I still need to try 11.8 + 8.6?
+Combinations I tried: cuda 11.8 + cuDNN 8.7, cuda 11.4 + cuDNN 8.7, cuda 11.2 + cuDNN 8.1.",I had tried 11.8 + 8.7 and got the same error.
+21,1,"I got the same issue.
+Any help please!!",I got the same issue.
+22,1,"Same problem here, with ROCM 5.4.1. It fails with GCC 12.2.0 but works with GCC 11.3.0","Same problem here, with ROCM 5.4.1. It fails with GCC 12.2.0 but works with GCC 11.3.0."
+23,1,HI.. still having a same issue..,still having a same issue
+24,1,"I have the same problem. You can try to replace Adam optimizer to another one. This problem only cause on this optimizer, avoid to use it and the problems will be solved temporarily",I have the same problem.
+25,1,"@mohantym got an error on this step
+```
+!bazel build -c opt --define MEDIAPIPE_DISABLE_GPU=1 mediapipe/examples/desktop/hand_tracking:hand_tracking_cpu
+```
+![image](https://user-images.githubusercontent.com/4569111/208084600-f54b6bd9-f20b-4f99-ba23-4fa11b4e19ea.png)
+I got those files, not sure how to tell bazel about it
+![image](https://user-images.githubusercontent.com/4569111/208085940-4d798a94-1b8e-4bbc-af82-dc6fdf3df4e3.png)
+**EDIT**
+adding `--copt -I/usr/include/opencv4` solved that issue",got an error on this step
+26,1,"@LIONEFAN,
+Sorry for the delay. I tried on tensorflow v2.10 to reproduce the issue but I was not able to fetch the files which are mentioned. Kindly find the [gist](https://colab.research.google.com/gist/tilakrayal/a78bb5afe17b093e69cb489d2281cf12/2-1000000.ipynb) and the image for the reference.
+![image](https://user-images.githubusercontent.com/81610181/208050074-5c7115bc-fdaf-47f1-b923-e989b9bb1877.png)",I tried on tensorflow v2.10 to reproduce the issue but I was not able to fetch the files which are mentioned.
+27,1,"> @chr1sj0nes Could you take look at this issue? seems that the broken is related to your commits to `tensorflow/compiler/xla/service/gpu/gemm_algorithm_picker.cc`
+Apologies for the slow reply. I can't see how my commit might have caused this error. @d0k 's theory looks a lot more likely to me.",I can't see how my commit might have caused this error.
+28,1,@sssstudyy still not solved.,still not solved
+29,1,@sayakpaul I was trying to reproduce this in TF 2.11. I got data access forbidden error. Can you please check [this](https://colab.research.google.com/gist/pjpratik/49028e7ef71fb197678dcb4d7013b677/albert_keras.ipynb) gist and help me with this. Thank you.,I was trying to reproduce this in TF 2.11
+30,1,"Same problems here.
+I'm using:
+Red Hat Enterprise Linux Server release 7.9 (Maipo)
+TF = 2.10.0
+python = 3.10 cuDNN/8.1.1.33
+CUDA-11.2.2
+Do I need to upgrade CUDA? or cuDNN
+In older versions of tf I dont have this problem","""Same problems here"""
+31,1,"How do you do to instal TF 2.9 ?
+I have the same issues but I don't succeed in fixing them !",I have the same issues but I don't succeed in fixing them !
+32,1,Same issue here with tensorflow 2.11.0 and TensorRT 8.5.1.7,Same issue here with tensorflow 2.11.0 and TensorRT 8.5.1.7.
+33,1,Probably yes. I have the same issue with TF 2.11.0 and TensorRT 8.5.1-1+cuda11.8.,I have the same issue with TF 2.11.0 and TensorRT 8.5.1-1+cuda11.8.
+34,1,"I updated the PR. It was passing here, but failed CI compilation. It should be fixed now.",Failed CI compilation.
+35,1,"I am having this issue with 2.11. Tensorflow crashes with no error message in model.fit
+Code works fine in 2.9
+I am using the Docker image",I am having this issue with 2.11.
+36,1,"@KingsleyLiu-NV no I think that's a Keras issue. Keras is a layer on top of TF, so TF's internals shouldn't need to know anything about keras. TF only deals directly with Tf tensor types (`Tensor`, `SparseTensor`, `RaggedTensor`, etc...)",I think that's a Keras issue.
+37,1,"Compilation fails just the same (i.e. with the same error). It seem that despite the added lines, bazel still uses the installed version of clang. Log attached.
+[fail.txt](https://github.com/tensorflow/tensorflow/files/9983390/fail.txt)",Compilation fails just the same (i.e. with the same error)
+38,1,"Could this issue result from using cuda 11.6? Just asking because I switched back to a commit for the models repo that was back around the time of tensorflow 2.5.0 thinking this would make things work and was seeing about the same issue.
+Only difference was that the model that was created and then exported to a .tflite file always seemed to run everything on the GPU except the last output layer where as in 2.10.0 it always seemed to split things between the gpu and cpu.","""Using cuda 11.6"""
+39,1,Closing due to conflict.,Closing due to conflict.
+40,1,This is still a problem in tensorflow 2.9.1.,This is still a problem in tensorflow 2.9.1.
+41,1,Seeing same issue,Seeing same issue.
+42,1,Closing due to Pylint conflict.,Closing due to Pylint conflict.
+43,1,Just notice that I got the same error on nightly build `0.0.1-nightly.20221102`,I got the same error on nightly build 0.0.1-nightly.20221102.
+44,1,"We had other issues with GCC 11 https://github.com/tensorflow/tensorflow/issues/50303
+As the build is only tested with what you see in the table we could have still some compatibility issue (or with our dependencies versions) with other GCC releases.",We had other issues with GCC 11
+45,1,"This issue still persists. In my example, I have a custom loss function that uses mae over intermediate layers of a neural network. The `model.get_layer(""xxx"").output` API returns a 'KerasTensor' which I believe causes this issue.",This issue still persists.
+46,1,"My attempts:
+2.4.1: leak
+2.7.1: leak
+How the problem occurs to me?
+```
+def predict(self, img: np.ndarray) -> np.ndarray:
+return self._model.predict(np.expand_dims(img, axis=0))
+```
+How did I solve it?
+```
+def predict(self, img: np.ndarray) -> np.ndarray:
+return self._model(convert_to_tensor(np.expand_dims(img, axis=0)), training=False).numpy()
+```","""How the problem occurs to me"""
+47,1,I also have this issue with Bazel 3.1.0 and tf 2.4.0,I also have this issue with Bazel 3.1.0 and tf 2.4.0.
+48,1,"I open [issue in Keras repo](https://github.com/keras-team/keras/issues/17148)
+but in my debug the bug is probably in this repo",I open [issue in Keras repo](https://github.com/keras-team/keras/issues/17148) but in my debug the bug is probably in this repo.
+49,1,"@penpornk , can you re-run the test?",Can you re-run the test?
+50,1,"The Keras guys wrote in https://github.com/keras-team/keras/issues/16978 that it looks like a TF issue and that we should report it here.
+@elina-israyelyan Could you please reopen the issue?",The Keras guys wrote in https://github.com/keras-team/keras/issues/16978 that it looks like a TF issue and that we should report it here.
+51,1,Sorry I cannot see where the linked issues relate to my issue. Where do I return an array instead of a tuple? I did not append the full error message. Sorry for that. I updated the issue with the full traceback. Does that change something?,I cannot see where the linked issues relate to my issue.
+52,1,"@mohantym I agree that this issue probably belongs in the keras repo. However, it was created before the split was made. I would have expected the organization to have made an effort in porting over any keras-related issues, including this one, if you feel community-created issues are valuable.
+I take it this was not done. Would you like this issue to be ported over now? How do you suggest we go about that?",I take it this was not done.
+53,1,"@angerson @nitins17 MacOS presubmits failed, but the ""Details"" link to see the logs is missing. Can you help fix this issue?","""Can you help fix this issue?"""
+54,1,https://github.com/keras-team/keras/issues/4875 i have tried this also but my problem is not solved.,"""I have tried this also but my problem is not solved."""
+55,1,"We probably have a different issue here because I am using cuda 11.7 with cudnn 8.5, while you are using 8.1. If you have cuda 11.7 installed but cudnn 8.1, it will not work and will give the PTXAS error.","I am using cuda 11.7 with cudnn 8.5, while you are using 8.1."
+56,1,"I'm facing the same problem. To solve this you can try changing your image shape, use lower width and height.",I'm facing the same problem.
+57,1,"Any update? It was approved 4 days ago, but isn't merged yet.
+One CI failed, but the test failure doesn't seem related to my PR. It is a grappler error:
+//tensorflow/python/grappler:remapper_test_gpu","""One CI failed, but the test failure doesn't seem related to my PR."""
+58,1,"I had the same exception with TF 2.8
+ValueError: Node '/BatchNorm/cond/FusedBatchNorm_1_grad/FusedBatchNormGrad' has an _output_shapes attribute inconsistent with the GraphDef for output #3: Dimension 0 in both shapes must be equal, but are 0 and 512. Shapes are [0] and [512].
+Cuda 11.2
+CuDNN 8.1
+Windows 10
+Python 3.10
+Changing to the latest TF 2.10 didn't help to resolve the problem.",I had the same exception with TF 2.8
+59,1,"TF's APIs should be used via `tf.`. So `tf.keras.*` is legitimate, `keras.*` not so much.","TF's APIs should be used via tf.. So tf.keras.* is legitimate, keras.* not so much."
+60,1,"@qlzh727 This issue is still happened on v2.10.0
+https://github.com/tensorflow/tensorflow/issues/53271#issuecomment-1239103757",This issue is still happened on v2.10.0
+61,1,@alkatar21 The issue still happened on v2.10.0 ![image](https://user-images.githubusercontent.com/106568143/188835585-81f4c7b1-398f-4217-827c-4abce7dc0f82.png),The issue still happened on v2.10.0.
+62,1,I m also having this problem,I m also having this problem.
+63,1,"If I use only pod 'TensorFlowLiteSwift', '~> 0.0.1-nightly', :subspecs => ['CoreML']
+then many error occure in code",> 0.0.1-nightly/>
+64,1,"> Hi, Could you please refer the comment here [#55639 (comment)](https://github.com/tensorflow/tensorflow/issues/55639#issuecomment-1233238644) which explains about the possible reasons for vectorized_map issues with different OPS.
+I don't think it is related. It is the impl of the converter:
+https://github.com/tensorflow/tensorflow/blob/d8ce9f9c301d021a69953134185ab728c1c248d3/tensorflow/python/ops/parallel_for/pfor.py#L2695-L2746
+/cc @ishark",I don't think it is related. It is the impl of the converter.
+65,1,Hi this seems like a duplicate of https://github.com/tensorflow/tensorflow/issues/56255 and it should be fixed in the latest nightly build (version 0.0.1-nightly.20220831),"""It should be fixed in the latest nightly build (version 0.0.1-nightly.20220831)."""
+66,1,"@sushreebarsa You should first git clone repo, then change the `MODEL_DIR` : ![image](https://user-images.githubusercontent.com/43233772/187669030-672519b2-38e8-43b1-bd55-cb0d1aab421f.png)
+I try it myself, got the same error","I try it myself, got the same error."
+67,1,"Thanks @sushreebarsa for replicating the bug.
+I have reported this issue in Keras repo https://github.com/keras-team/keras/issues/16962. However, I would still like to keep it here, because according to https://github.com/tensorflow/tensorflow/issues/57357, this bug seems to come from the same gradient problem as `tf.nn.silu` and `tf.nn.sigmoid` (because Swish computes `x*sigmoid(x)`), and could be related to tensorflow implementation for this sigmoid gradient computation.","""I have reported this issue in Keras repo https://github.com/keras-team/keras/issues/16962"""
+68,1,Facing the same issue.,Facing the same issue.
+69,1,"I'm getting the same error, on 2.9.0 but I reproduced it in 2.8.0 and 2.9.1 too. I'll see if I can create a small enough example to post.
+2022-08-23 16:26:25.102620: E tensorflow/stream_executor/cuda/cuda_blas.cc:197] failed to set new cublas math mode: CUBLAS_STATUS_INVALID_VALUE
+2022-08-23 16:26:25.102641: W tensorflow/core/framework/op_kernel.cc:1745] OP_REQUIRES failed at matmul_op_impl.h:438 : INTERNAL: Failed initializing math mode","""I'm getting the same error, on 2.9.0 but I reproduced it in 2.8.0 and 2.9.1 too."""
+70,1,It is still replicating in 2.9 and nightly. Attached [gist](https://colab.sandbox.google.com/gist/mohantym/6858ff76dd5f7e35d943683b4d8dd2f1/untitled79.ipynb#scrollTo=rt5eLIgAfLEU) for reference.,It is still replicating in 2.9 and nightly.
+71,1,"@sachinprasadhs,
+I was able to reproduce the issue on tensorflow v2.9 and nightly. Kindly find the gist of it [here](https://colab.research.google.com/gist/tilakrayal/775dc8ff4e3d8bb2b7c7dfbac78db7d3/untitled502.ipynb) and the issue was reproducible on all int datatype(**int8, int16, int32, int64)**, but was able to execute without any issue on other datatypes (**bfloat16, half, float32, float64, complex64, complex128)**","""I was able to reproduce the issue on tensorflow v2.9 and nightly"""
+72,1,"**Error still persists in tensorflow-macos=2.9.2 and tensorflow-metal=0.5.0.**
+Error occurred while attempting to run inference using a Tensorflow 2 version of the Mask R-CNN deep learning neural network architecture for instance segmentation:
+2022-08-16 04:06:15.497243: F tensorflow/core/framework/tensor.cc:728] Check failed: IsAligned() ptr = 0x2d5a5cf60
+Machine is an M1 Max MacBook Pro.
+Message has been posted on Apple Dev Forum: https://developer.apple.com/forums/thread/696907",Error still persists in tensorflow-macos=2.9.2 and tensorflow-metal=0.5.0.**
+73,1,"The pylint error is in the existing code, not in my branch. See #57178","The pylint error is in the existing code, not in my branch."
+74,1,"> I am currently facing this issue.
+> any solution or alternative?
+I've switched to a different platform for object detection (YOLOv5 which is pytorch based).",I am currently facing this issue.
+75,1,It did not show as merged here because copybara sync was broken. Fixed in big squash commit 49f97f135a2e1d5d22e60d2a80ec668d53f9708a,"""Copybara sync was broken"""
+76,1,"""Quick fix is to download 'cudart64_110.dll' from [dll-files.com ](https://www.dll-files.com/cudart64_110.dll.html)and paste it into cudatoolkit/bin file location."" **Done**
+After I've seen your response I followed the instructions from [here](https://www.tensorflow.org/install/pip#windows) what i did is installing Cuda 11.2 and CudNN 8.1 and copy paste cudart64_110.dll.html to the bin file , Microsoft Visual up to date and NVIDIA® GPU drivers as well, I still have the same problem.",I still have the same problem.
+77,1,"> No it was old, are you saying previously you saw PR being committed as multiple separate commits? I don't think that was ever the case?
+Check this old PR of mine: https://github.com/tensorflow/tensorflow/pull/51558/
+Its merge commit is: https://github.com/tensorflow/tensorflow/commit/f08d120097b070ad972948c7db3544aaaa6296a1
+Then do: `git log --graph f08d120097b070ad972948c7db3544aaaa6296a1`
+My individual commits are in the log","""I don't think that was ever the case"""
+78,1,"Hey @mohantym that doesn't seem to help. The app crashes when initializing the interpreter. Commenting out this line `options.setUseNNAPI(true)` fixed the crash but not the predictions.
+I get the same random predictions. Could it be something in the format of the pixels fed to the tflite model?","""That doesn't seem to help"""
+79,1,"I have the same issue. When I updata the python version to 3.9, the issue is still exist. In my opinion, this issue is related to MSVC compiler. Finally, I fit it by replacing the ""complex"" file on MSVC2019 with the same name on MSVC2017.",I have the same issue.
+80,1,Closing this one as it is invalid. https://github.com/tensorflow/tensorflow/pull/56953 has the version changes for rc0,Closing this one as it is invalid.
+81,1,"I am also having this issue. I'm training a model using Attention. I'm running Ubuntu 20.04, Python 3.8.10, TF 2.5.3, NVIDIA GTX 1080 ti. ![image](https://user-images.githubusercontent.com/3291031/181793250-9b8bcf49-0144-414b-86f4-f240c4cc61e8.png)",I am also having this issue.
+82,1,"I have checked these links. But they can't help to solve my problem.
+There is no bi-directional LSTM in my question, I just want to build a simple LSTM layer. But got Unidirectional LSTM instead, same as this [link](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/examples/experimental_new_converter/Keras_LSTM_fusion_Codelab.ipynb). As you known, they are two different layers in tensorflow lite.","""But they can't help to solve my problem."""
+83,1,Hi I have the same problem with this model = [SSD MobileNet V2 FPNLite 640x640](http://download.tensorflow.org/models/object_detection/tf2/20200711/ssd_mobilenet_v2_fpnlite_640x640_coco17_tpu-8.tar.gz). It looks like this model needs more RAM (I only have 8 GB). I use the 320x320 version I was to able to train it with only 8 Gb.,I have the same problem with this model
+84,1,get the same problem,get the same problem
+85,1,"@chunduriv The other thread has been closed but I am still experiencing the same issue for v2.7, v2.8, and release 2.9 even after fresh installs.","The other thread has been closed but I am still experiencing the same issue for v2.7, v2.8, and release 2.9 even after fresh installs."
+86,1,"@chunduriv I don't think it should be a keras issue. `tf.sparse.reshape` cannot deal with `tf.keras.Input(shape=(3, 4), sparse=True, dtype=tf.int64)`, should not it be a TF issue?","""I don't think it should be a keras issue."""
+87,1,"Same error with those changes:
+org.tensorflow.lite.examples.objectdetection E/tflite: Following operations are not supported by GPU delegate:
+CUSTOM TFLite_Detection_PostProcess: TFLite_Detection_PostProcess
+PACK: OP is supported, but tensor type/shape isn't compatible.
+RESHAPE: OP is supported, but tensor type/shape isn't compatible.
+111 operations will run on the GPU, and the remaining 46 operations will run on the CPU.","""Same error with those changes"""
+88,1,Still the same issue on 2.8,Still the same issue on 2.8.
+89,1,"I tried again, and it seems that I can't reproduce this problem again. Although I'm very unwilling, I will remember this problem, and I will solve it when it reappears","I tried again, and it seems that I can't reproduce this problem again."
+90,1,"Hi @mohantym I just got around testing this with the latest Bazel and TF but the issue still persists.
+Possible solutions is our long-term patch at https://github.com/easybuilders/easybuild-easyconfigs/blob/439c0f2cb41bcb8f11071457550a2786eabe76a8/easybuild/easyconfigs/t/TensorFlow/TensorFlow-2.1.0_fix-cuda-build.patch or https://github.com/tensorflow/tensorflow/pull/56360",I just got around testing this with the latest Bazel and TF but the issue still persists.
+91,1,"I am not able to reproduce the same on colab. Seems like it might be because of different version of keras. So uninsatalled keras and installed it again, it worked for me. pip uninstall keras
+pip install keras --upgrade",I am not able to reproduce the same on colab.
+92,1,This PR have some test failure that Jonathan is having problems to reproduce.,"""Having problems to reproduce"""
+93,1,"Thank you @mohantym. This [PR](https://github.com/tensorflow/build/pull/57) changed the default ABI but I don't think it fixed the issue. If I use the code above I get a difference of RAM usage between tf 2.8 and 2.9. More people might complain now that the CXX11 ABI is used by default.
+Note that my testing network has been trained with tf 1 but I don't think it change much (I don't have a tf 2 trained equivalent).","""I don't think it fixed the issue"""
+94,1,"Same problem...
+Update: Even though you print the tensor and get Tensor(""args_0:0"", shape=(), dtype=string) when you print but this does not repesent the actual values inside the tensor, i.e. if you just process your string tensor (or other tensor) appropriately, it will give you the good result, despite printing other stuff.
+TL;DR: Don't trust the output of print() on a Tensor.",Same problem...
+95,1,@cyrus2018 still facing the same issue,still facing the same issue
+96,1,"@penpornk, could you re-run the test again?",Could you re-run the test again?
+97,1,"CI failure does not look related to these changes, seeing the same failure on #56345 (which has no code changes) so I assume this is noise.
+```
+//bazel_pip/tensorflow/python/kernel_tests/nn_ops:conv_ops_3d_test_cpu FLAKY, failed in 3 out of 33 in 300.3s
+```",CI failure does not look related to these changes
+98,1,Still not solved?,Still not solved?
+99,1,@georgwiese Tried running your code with latest version of tensorflow (tf 2.8.0). Ran into a different error. Here's the [colab](https://colab.research.google.com/gist/gowthamkpr/3c0a1349de501cf89d15a62f06c0dae8/untitled.ipynb). Pls take a look at the solution provided [here](https://stackoverflow.com/questions/61910143/how-to-use-tf-function-with-keras-sequential-apis) to solve the new error.,"""Tried running your code with latest version of tensorflow (tf 2.8.0)"""
+100,1,This still persists in tensorflow 2.8.0,This still persists in tensorflow 2.8.0.
+101,1,Any solution ? I am facing the same problem,I am facing the same problem.
+102,1,"Two test are failed, I am trying to look at the details, but not sure if the failure is related to this PR change. For the Code Check-Changed Files, I couldn't see what exactly failed.
+For the Py+CPP Test Suite, I see //tensorflow/c/eager:c_api_test_gpu failed, not sure if it is from this PR change.
+Please let me know if I miss anything. Thanks.","""I am trying to look at the details, but not sure if the failure is related to this PR change."""
+103,1,I am facing the same issue with 2.8.,I am facing the same issue with 2.8.
+104,1,"Hi @sushreebarsa I don't this is still an issue. At that time when I opened this issue, it was present and I raised a fix as well [Here](https://github.com/tensorflow/estimator/pull/59) but due to very large merge conflicts (when the time to merge came) the changes were skipped.
+So, I think this ticket can be closed, as mixing of Estimators with TF2 may not be a very good idea, so I'm closing this.",I don't this is still an issue.
+105,1,Running into the same issue as well.,Running into the same issue as well.
+106,1,"Yes. I just run with command:
+```bazelisk test tensorflow/compiler/mlir:all --cache_test_results=no```
+and all pass, It seem some test no run.","I just run with command: bazelisk test tensorflow/compiler/mlir:all --cache_test_results=no and all pass, It seem some test no run."
+107,1,"i'm seeing the same issue too, what can i do if i build op only using gcc 9.3? Delete /root/.cache/bazel is not ok","i'm seeing the same issue too, what can i do if i build op only using gcc 9.3?"
+108,1,This is also causing an issue for me. Do you have a pointer in TF code where I can hack together an addition to not compile tf.where?,This is also causing an issue for me.
+109,1,"> I faced the same problem with Python 3.8.5 This works for me: enable ""long path"" policy using ""gpedit.msc"", then execute ""pip install --upgrade tensorflow""
+> See also https://stackoverflow.com/questions/66672519/could-not-install-packages-due-to-an-oserror-errno2-no-such-file-or-directory
+1. follow this https://www.howtogeek.com/266621/how-to-make-windows-10-accept-file-paths-over-260-characters/ to enable long path
+2. pip install --upgrade tensorflow","""I faced the same problem with Python 3.8.5"""
+110,1,i am having the same issue,I am having the same issue.
+111,1,`feedback/copybara` is failing again.,feedback/copybara is failing again.
+112,1,"@[windmaple](https://github.com/windmaple)Recently, I used tensorflow to train a super-resolution model, but this error still occurs, that is, an error will be reported when the image input size is too large, but there is no problem when the image is small","""Error still occurs"""
+113,1,`feedback/copybara` is failing again,feedback/copybara is failing again.
+114,1,"Hi @joker-eph, The `AMD ROCm CI` complained about ```
+ERROR: The project you're trying to build requires Bazel 5.1.0 (specified in /workspace/.bazelversion), but it wasn't found in /usr/local/lib/bazel/bin.
+```
+I don't think it is related to my fix. Could you help take a look at it?","""I don't think it is related to my fix."""
+115,1,I still have this issue with `v2.8.0`.,I still have this issue with v2.8.0.
+116,1,Copybara again,"""Copybara again"""
+117,1,"@mihaimaruseac , any thought on the internal CI fail Internal",CI fail
+118,1,@google-ml-butler This is still an issue. @gustavo-dev can you please reopen.,This is still an issue.
+119,1,"> I am getting the same errors with version 2.8.0 and python 3.9. I need to use class_weight cause of my data is heavily imbalanced. If I run without the class_weight, no errors. Is there solutions or workarounds for this issue? Thanks
+I used focal loss to handle imbalance as I was not able to use class_weight..
+this link helped me:
+https://www.dlology.com/blog/multi-class-classification-with-focal-loss-for-imbalanced-datasets/",I am getting the same errors with version 2.8.0 and python 3.9.
+120,1,Found a problem. Close for now.,Found a problem. Close for now.
+121,1,Unfortunately it didn't worked. The error is still the same even changing Cuda and CuDNN.,"""The error is still the same even changing Cuda and CuDNN."""
+122,1,@gbaned An import/copybara error occurred. please let me know how i can help fix this.,An import/copybara error occurred.
+123,1,Same problem here.,Same problem here.
+124,1,"I have an update. I ran the code on tensorflow 2.4, and I get the same issue as I did on 2.1.","I ran the code on tensorflow 2.4, and I get the same issue as I did on 2.1."
+125,1,"I checked the logs for ""Ubuntu CPU - Internal CI build failed"" and ""Intel® oneDNN -- Community CI Build"", they have the same two test case failures and the failures are not related to this PR change.","I checked the logs for ""Ubuntu CPU - Internal CI build failed"" and ""Intel® oneDNN -- Community CI Build"", they have the same two test case failures and the failures are not related to this PR change."
+126,1,@mihaimaruseac Why was this closed?,Why was this closed?
+127,1,"> Hi @jinzzasol ! Did you check instructions for [WSL ubuntu](https://docs.nvidia.com/cuda/wsl-user-guide/index.html) on Nvidia site too?
+@mohantym Yes, and I tried. But I don't think it helped.","""But I don't think it helped."""
+128,1,Having the same issue. Can we reopen this issue?,Having the same issue.
+129,1,"I use Tensorflow 2.8.0. I have the same problem.
+With or Without assigning name of each inputs and outputs of my model, TFLite converter change orders",I have the same problem.
+130,1,@sampathweb I did install tensorflow (i.e. tensorflow-macos and tensorflow-metal) as you suggested but it is not possible for me to install other libraries which have tensorflow as a dependency. Is this that a bug?,I did install tensorflow (i.e. tensorflow-macos and tensorflow-metal) as you suggested but it is not possible for me to install other libraries which have tensorflow as a dependency.
+131,1,I have the same problem in TF 2.8.0,I have the same problem in TF 2.8.0.
+132,1,"CUDA version. needs to be 11.2+, from your config it looks like its 10.1. So, please see if you can upgrade your local CUDA version to 11.x. 11.2 builds should be compatible with anything 11.x","CUDA version. needs to be 11.2+, from your config it looks like its 10.1. So, please see if you can upgrade your local CUDA version to 11.x. 11.2 builds should be compatible with anything 11.x."
+133,1,"@janhartman yes, tried with both standalone command line tools and full Xcode install, error persists","""Error persists"""
+134,1,I still have this problem with TF 2.0.,I still have this problem with TF 2.0.
+135,1,"@sampathweb I tried with Python 3.9.7, yet it fails with the same error.
+@mohantym I'll try with the tested configuration and let you know.","I tried with Python 3.9.7, yet it fails with the same error."
+136,1,Have the same issue(,Have the same issue(.
+137,1,"I have this problem too
+I'm new to machine learning and this problem is pretty frustrating
+I'm using my feature column in an estimator.DNNClassifier",I have this problem too
+138,1,Still I am getting this error. Tensorflow 2.8.,Still I am getting this error.
+139,1,"![image](https://user-images.githubusercontent.com/27774893/154613430-d9c61388-5554-4b33-8c38-d007957b9044.png)
+I have the same problem when i use GCC 5.4.0. Maybe use GCC 7.3.1 can solve this problem.",I have the same problem when i use GCC 5.4.0.
+140,1,"No, that does not help at all.","No, that does not help at all."
+141,1,@sushreebarsa I have updated the Colab notebook (https://colab.research.google.com/drive/1F-KqnVYFq4UEEcwKSt2hxWb161QNS668?usp=sharing) to use tensorflow v2.8.0. I still get the same error.,I still get the same error.
+142,5,"Please don't use ""update "" commit messages. These make it harder to understand at a glance at commit history what the changes are.
+https://cbea.ms/git-commit/","""these make it harder to understand at a glance at commit history what the changes are."""
+143,5,"Please don't use ""update <file>"" commit messages. These make it harder to understand at a glance at commit history what the changes are.
+https://cbea.ms/git-commit/","""update file>"" commit messages. These make it harder to understand at a glance at commit history what the changes are. https://cbea.ms/git-commit/."
+144,5,"Please use better commit messages and PR titles.
+https://cbea.ms/git-commit/","""Please use better commit messages and PR titles."""
+145,5,@bhack @sagunb : we cannot update from tensorflow 2.9 because of this bug. any updates on this when this will be resolved?,"""We cannot update from tensorflow 2.9 because of this bug."""
+146,5,"Still Same issue even in latest 2.10.0
+Any Update ?",Still Same issue even in latest 2.10.0 Any Update ?
+147,5,"Also, please don't use ""Update <file>"". Use better commit messages and PR titles: https://cbea.ms/git-commit/","""Update file>"""
+148,5,"Please use better commit messages and PR titles, not ""update < file>"".","""update  file>"""
+149,5,"> @IAL32 This PR is in draft, any update on this? Please. Thank you!
+Hi @gbaned , still no update on this from my side. As in https://github.com/tensorflow/tensorflow/pull/53385 it might take some time for me to get back to this.","""still no update on this from my side"""
+150,5,"> Please use a proper commit message / PR title, not `Update <file>`. See https://cbea.ms/git-commit/
+Sorry , updated description.","""Please use a proper commit message / PR title, not Update file>."""
+151,5,"> Please retitle the PR message (and in the future use a better commit message). See for example https://cbea.ms/git-commit/
+I tried to mention meaningful information now. Please check.","""Please retitle the PR message (and in the future use a better commit message)"""
+152,5,"I have the latest updates and, its still the same error @chunduriv <img width=""470"" alt=""Screen Shot 2022-03-08 at 6 14 16 PM"" src=""https://user-images.githubusercontent.com/101177094/157290129-92b2b3f4-ea28-4192-b825-6d22f8a21bce.png"">","I have the latest updates and, its still the same error"
+153,5,"Hi @gadagashwini , please don't use a ""Update <file>"" commit message. Instead, please try to follow [proper commit etiquette](https://cbea.ms/git-commit/)","""Update file>"" commit message."
+154,6,"@mihaimaruseac @mohantym Could you remove the label ""awaiting PR merge"" please?","""awaiting PR merge"""
+155,6,Closing - no response.,No response.
+156,6,@rainwoodman is the merge of this PR blocked by something?,is the merge of this PR blocked by something?
+157,6,Sorry for the delays in merging. This is failing internal tests and we are still trying to figure out why. We hope to have it merged soon.,delays in merging
+158,6,"> Hi @cantonios Can you please review this PR ? Thank you!
+I added my review, and there was no response.","I added my review, and there was no response."
+159,6,"Here we have multiple values that we have not set (-1).
+The PR is editable on your side so we could differentiate the number of days x labels. We need to set something to replace `-1`
+E.g. `contribution welcome` could have a different threshold from `awaiting response` etc..",awaiting response
+160,6,"Apologies for the delayed response,
+`tf.compat.v1.disable_eager_execution()` would force the entire code to run in graph mode and results in faster execution as compared to Tensorflow eager mode where only model logic part is wrapped in `tf.function` and runs in graph mode when `run_eagerly` is set to `False`.",delayed response
+161,6,"To over-communicate, I'm waiting for responses to my review comments above.",I'm waiting for responses to my review comments above.
+162,6,@cheshire any idea why it isn't merged while the other PR got merged?,"""why it isn't merged while the other PR got merged?"""
+163,6,"@gbaned We could not merge this.
+@mdanatg We lost the PR... What you want to do?",We could not merge this.
+164,6,"Closing, as a work-around has been presented with no response.","Closing, as a work-around has been presented with no response."
+165,6,"Hey, So 10 days have passed. Does this mean I get no response from Tensorflow?","""I get no response from Tensorflow"""
+166,6,@gbaned Could you merge the PR?,Could you merge the PR?
+167,6,@gadagashwini This is why a new ticket was opened. If you look at the communication in the other ticket there isn't a single response from the assignee and it's just labelled awaiting tensorflower.,"""There isn't a single response from the assignee and it's just labelled awaiting tensorflower."""
+168,8,Can you resolve conflicts? a695fffc660994e892583391d69e4c1b9ce89320 has some minor conflicts.,Can you resolve conflicts? a695fffc660994e892583391d69e4c1b9ce89320 has some minor conflicts.
+169,8,@philipphack Can you please fix merge conflicts?,Can you please fix merge conflicts?
+170,8,PR https://github.com/tensorflow/tensorflow/pull/59253 already went in. Could you please help resolve merge conflict?,"""Resolve merge conflict?"""
+171,8,There are merge conflicts and internal test failures. I will fix and merge. Please don't update the PR to address merge conflicts since it will revert the internal test failure fixes I am doing.,merge conflicts and internal test failures.
+172,8,FYI. Still working on resolving internal build issues.,Still working on resolving internal build issues.
+173,8,"For the CLA issue, it shows that there are 2 contributors possibly because the email set for git commits (non-gmail) and the email for CLA were different when creating this PR. I have changed the git email to match the CLA one but the issue still remains. I am not sure how to resolve this. Do I need to re-open the PR?","""I am not sure how to resolve this."""
+174,8,"Any idea what I can do to resolve this?
+> feedback/copybara — Google internal checks FAILED for runs with create time 2022-09-06T16:34:12.870440305Z.
+I also need to resolve a merge conflict.",I also need to resolve a merge conflict.
+175,8,@rahulbatra85 could you please resolve conflicts!,"""could you please resolve conflicts!"""
+176,8,The issue has not been resolved. But I found an alternative method to save the model,The issue has not been resolved.
+177,8,I am currently working to resolve internal conflicts,I am currently working to resolve internal conflicts.
+178,8,"I agree with @3a2l. This has **not** been resolved. Need a proper, stable solution for freeing GPU memory through the TF API. This is relevant for all programming languages that use TF. Strange that this does not exist in 2022.","""This has **not** been resolved"""
+179,8,@bixia1 I had to resolve another merge conflict that came up in the last few days. Does the PR need to be re-approved?,I had to resolve another merge conflict that came up in the last few days.
+180,14,"> Its still being looked into. Does the workaround suggested here - https://github.com/tensorflow/tensorflow/issues/58676#issuecomment-1341147862 work for you until we have an resolution?
+It would be a pretty big refactor to do this. Also correct me if I'm wrong but aren't TF datasets more for setting up efficient pipelines to utilize CPU and GPU when training models etc. Here we are just talking about inference and serving models.",Its still being looked into.
+181,14,"Thank you, sir, but still not working.","""still not working"""
+182,14,"Looks like an issue on cleanup side.
+@learning-to-play",Looks like an issue on cleanup side.
+183,14,"> @gaohuacq Can you please refer through [this](https://github.com/keras-team/keras/issues/12625#issuecomment-668814501) comment and let us know if that helps. Thank you.
+I have tested this, but it doesn't work.","I have tested this, but it doesn't work."
+184,14,Looks like tf_runtime needs to be fixed first.,Looks like tf_runtime needs to be fixed first.
+185,14,"@tilakrayal thanks for the quick response!
+Yes, I found that work around. However this is not ideal as it loads as tensorflow model not keras model.
+The other work around (if its just a shortcut layer) is to use `tf.keras.layer.Layer()` instead of Sequential().
+But my purpose of reporting this, is this is a case that should work and should be supported but isn't.","""I found that work around"""
+186,14,"@bixia1: It is just a first draft. The test doesn't even work. In the meantime, it makes sense to review the refactoring of `tensorflow/python/compiler/tensorrt/test/BUILD`",The test doesn't even work.
+187,14,This still doesn't seem to work... with a custom keras model.,"""still doesn't seem to work"""
+188,14,"@pindinagesh, could you redirect this question to TF repo? It looks more like a TF issue.","""It looks more like a TF issue."""
+189,14,"@chr1sj0nes is the author of that change.
+Something looks off here.
+a) XLA shouldn't be depending on anything much in tensorflow/core/kernels.
+b) in general targets should depend directly on what they need. Something is usually off if a top-level target is having dependencies added because an underlying target is missing them.",Something looks off here.
+190,14,still not working I've updated my TensorFlow to version 2.9.0,"""still not working"""
+191,14,"Hi It is still not working when I tried to batched generate text by ""one_step_reloaded"" [https://colab.research.google.com/gist/tilakrayal/1e3b0be6e3530f5bd0a50ce0e88da509/text_generation.ipynb](url)","""still not working"""
+192,14,"> I implemented small lib to calculate FLOPs/MACs: https://github.com/evgps/flopco-keras
+This repo doesn't work anymore.",This repo doesn't work anymore.
+193,14,"@mihaimaruseac Something is not working. The PyLint Action was executed ( failed <relative-time datetime=""2022-03-30T20:26:16Z"" class=""no-wrap"">Mar 30, 2022</relative-time> in 43s )",Something is not working.
+194,14,"No it still does not work. I am surprised so many tools exist to disable logging, yet TF cannot interface with these tools properly.",No it still does not work.
+195,14,"I tried this also before posting the problem here. This also doesn't work. When you are not using eager execution (tf.disable_eager_execution()), whenever you compile (using model.compile()) or call a model (e.g. using model.predict(data) or model(data)), the logging information I showed above appears.","""This also doesn't work."""
+196,14,No that doesn't work. I actually have it set to level 3. It does not suppress non-eager execution information.,No that doesn't work.
+197,14,"Still not working?
+Could you please try to install all from conda-forge to see if that helps? Print `conda info` and `conda list` please if that doesn't work. Also try something like the below command:
+`mamba create -n tf -c conda-forge tensorflow==2.7.0=cuda112*`","""still not working"""
+198,28,"[MacOS CPU Python3](https://source.cloud.google.com/results/invocations/709f8779-1cf0-4c10-a8cd-fc06ffcddd52/targets) failures seem unrelated to this PR:
+```
+clang++: error: no such file or directory: 'tensorflow/compiler/mlir/lite/sparsity/sparsify_model.cc'
+clang++: error: no input files
+```","""Failures seem unrelated to this PR"""
+199,28,This keeps failing internal tests. Let me see if I can quickly generate a fix,This keeps failing internal tests.
+200,28,"> Hi @trevor-m, Google internal checks failed. I fixed it. Could you please sync? Sorry for the inconvenience.
+Thanks @learning-to-play! I synced the PR but it looks like the internal checks are failing again. Let me know if I can help at all.","""It looks like the internal checks are failing again."""
+201,28,This PR broke the build on CPU. I'll fix it locally and update it. Not ready to be approved.,This PR broke the build on CPU.
+202,28,"Hi @trevor-m, Google internal checks failed. I fixed it. Could you please sync? Sorry for the inconvenience.","""Google internal checks failed"""
+203,28,I didn't change files that are broken. I think these tests are already broken,I didn't change files that are broken. I think these tests are already broken.
+204,28,"Seems to break `//tensorflow/compiler/xla/service/gpu:cudnn_fused_conv_rewriter_test` when running with `XLA_FLAGS=--xla_gpu_enable_xla_runtime_executable`, judging by the error message the error is with the test. @ezhulenev","""Seems to break"""
+205,28,"Update: With the changes, tests are failing again in multiple files.",tests are failing again in multiple files.
+206,28,"The above PR was automatically rolled back, since the tests were failing.
+I have submitted the changes again. I will update once the test results are completed.","""The tests were failing"""
+207,28,"Bump on this, this is still broken as of 2.9.1.","""This is still broken as of 2.9.1.."""
+208,28,"Seems CI wants a slightly different formatting. Added that change (only), the other failures are unrelated","Added that change (only), the other failures are unrelated."
+209,28,I can see some tests are failed but the log shows the failure is unrelated to this PR. Can you help check? @reedwm,I can see some tests are failed but the log shows the failure is unrelated to this PR.
+210,28,"@penpornk I believe this has been broken for a while. I tried to go back to find a passing build with ""--config=mkl"" setting, but haven't found one with my limited rebuild effort. I can use some guidance on a potential analysis of the why this import is potentially failing in Windows. Do we have to explicitly set some PATH/PYTHONPATH env var to help the build find the module? The pipeline you mentioned was a recent temporary effort and not a mainline pipeline.","""I believe this has been broken for a while"""
+211,28,"Many tests failed, will email a log",Many tests failed.
+212,28,"@PatriceVignola We only run TensorFlow presubmit tests before merging. After merging, PRs could still be reverted if they broke TensorFlow nightly tests or other internal tests (e.g., unit / integration tests of internal applications that use TensorFlow). In this case, it broke an internal test.","""In this case, it broke an internal test."""
+213,28,This PR got reverted because it broke internal tests. Will add this to the list of `DEVICE_DEFAULT` ops to revisit / investigate later.,"""PR got reverted because it broke internal tests"""
+214,28,It seems the PR has been hanging for a while. I see some tests fail but they seem unrelated to the PR. Can you help check? @awpr @jurahul,I see some tests fail but they seem unrelated to the PR.
+215,33,@synandi Tensorflow 2.12.0 Can't use GPU on Windows 11?,Can't use GPU on Windows 11?
+216,33,"Can confirm that I still experience this behaviour in all versions of TensorFlow I have tried after 2.4 (including 2.5, 2.8, and most recently 2.11). Have there been any updates on this at all? Or is there an easy fix or way to disable this warning?","""I still experience this behaviour in all versions of TensorFlow I have tried after 2.4"""
+217,33,The issue here is not about Windows.,The issue here is not about Windows.
+218,33,"Is the windows build broken ? i want to build cuda debug and see if i can import the dll into C++ builder.
+Bazel - 5.3.1
+VC 2022
+Branch 2.10 from git hub,
+using latest copy of anaconda3 ( Python 3.10)",Is the windows build broken ?
+219,33,"Hi @trevor-m, It seems the macOS build is still failing.",It seems the macOS build is still failing.
+220,33,"> Hi @benbarsdell, Can we move this issue to closed state, If it was resolved. Thank you!
+@gadagashwini I don't think it was resolved. I am experiencing the same issue on Windows with TensorFlow 2.10.0. Works fine on CPU though, but same issue on GPU as described above. Any simple fix for this?",I am experiencing the same issue on Windows with TensorFlow 2.10.0.
+221,33,I am experiencing the same error in tensorflow version 2.9.1. I just now kept receiving the error message after removing the arguments: activation='relu' and dropout=0.2. Does this affect the model somehow or can the error message be ignored?,I am experiencing the same error in tensorflow version 2.9.1.
+222,33,"The windows build was still failed.
+So I rebased by PR. Maybe it will allow a clean run.
+@cheshire can you approve again?",The windows build was still failed.
+223,33,"> I experience the same issue on 2.4.0.
+I experience the same issue on 2.6.0.",I experience the same issue on 2.4.0. I experience the same issue on 2.6.0.
+224,33,"So, windows GPU failure:
+```
+T:\src\github\tensorflow>CALL tensorflow\tools\ci_build\windows\gpu\pip\run.bat --enable_remote_cache ""T:\src\gfile\bazel_wrapper.py"" 1>tensorflow/tools/ci_build/builds/win.out 2>&1 ERROR: Aborting VM command due to timeout of 10800 seconds
+```
+This can be ignored, I see the other one passed, so we should be good.","So, windows GPU failure: "
+225,33,"> Build is still failing. I don't think the fix is in Python, since the argument can be a list or a tensor or anything that can be converted to a tensor.
+I agree ,any idea how we can fix this issue ?",Build is still failing.
+226,33,"Build is still failing. I don't think the fix is in Python, since the argument can be a list or a tensor or anything that can be converted to a tensor.",Build is still failing.
+227,33,"The build failed again without a ""Details"" link. Is there anything I can do to expedite this PR? I successfully built it and ran the tests locally but maybe I'm missing something. Is there a way to confirm whether it is an infra issue or not?","The build failed again without a ""Details"" link."
+228,33,"I'm not sure why the Windows Bazel GPU build is failing. I built it locally yesterday and it completed just fine, and the Linux GPU build completed successfully. Is it possible to look at the failures or is it unrelated to this PR?",I'm not sure why the Windows Bazel GPU build is failing.
+229,33,"Same with this one. I see ""Windows Bazel GPU"" fails but the details are not accessible. @awpr @jurahul","""Windows Bazel GPU"" fails but the details are not accessible."
+230,33,I am also experiencing the same kind of issues. I am currently using tf 2.7.0,I am also experiencing the same kind of issues.
