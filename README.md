@@ -5,5 +5,5 @@ In the following, we briefly describe the different components that are included
 The project includes the following files and folders:
 
   - __/annotation__: A folder that contains annotation instructions and the annotated file.
- - __/blue_score__: A folder that contains the scripts for bleu score computation for Emotion-Cause Extraction.
- - __/cluster__: A folder that contains the scripts of clusters regarding Case Study.
+ - __/blue_score__: A folder that contains the scripts for BLEU score computation for emotion-cause extraction.
+ - __/cluster__: A folder that contains the scripts for generating clusters for the case study.
