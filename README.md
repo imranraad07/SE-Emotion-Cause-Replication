@@ -10,4 +10,4 @@ The project includes the following files and folders:
  - __/Emotion_Classification__: A folder that contains scripts for training and testing emotion classification using BERT and RoBERTa.
       - emotion_classification.py: the script of emotion classification.
       - ReadMe.md: contains the readMe on how to run emotion_classification.py.
-      - Dataset: A folder that contains the datasets used in this experiment.
+      - __/Dataset__: A folder that contains the datasets used in this experiment.
