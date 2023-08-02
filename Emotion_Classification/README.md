@@ -20,7 +20,7 @@ Install the required packages using the following command:
 
 ## Usage
 
-1. Make sure you have training and test data in CSV format. The CSV files should contain two columns: "text" (containing the text to classify) and "label" (containing the class labels). The label value should be Anger, Fear, Love, Joy, Surprise, Sadness. This is a multi-label dataset.
+1. Make sure you have training and test data in CSV format. The CSV files should contain two columns: "text" (containing the text to classify) and "label" (containing the class labels). The label value should be Anger, Fear, Love, Joy, Surprise, Sadness. 
 
 
 2. Run the emotion classification script with the following command:
