@@ -1,0 +1,221 @@
+text,label
+"- killed a stuck Camel build
+- deleted the file as an administrator
+- running build again now",0
+"- the computedHashCode() didn't use the a single ""qualifier"", now it does.",0
+"""@deprecated"" isn't enough because it's just at the method/class level, not an internal if branch.",0
+"), then I'm ok with that as well.",0
+"[~jbellis] The weird thing is that although *newSSTables.size() != newSSTablesSize* the assertion doesn't actually cause an error, so no stack trace, but swapping the assertion (as shown below) yields the stack trace below.",0
+{quote}You are messing down deep below hbase in dfs.,1
+"@idiot Yeah, I was on that idiot-path for a good while but commons-lang is a hairball, at least where this hashcode making and equals is concerned.",1
+"@Paul
+Forget the previous patch, it added unneeded complexity for parsing and dealing with multivalue (line) ini file config parameters.",0
+* release of the framework.,1
++1 for the docs in the SRC though.,0
+> Actually I just noticed something when trying to commit.,0
+> We can't let fear of back-compat prevent us from making progress.,1
+"A second run (with 2048M) only got worse (sooner) OOM behavior and after that I had trouble getting rid of my processes
+- apparent hang with derbyall:lang/wisconsin.java.",0
+After moving it to a local disk I can't reproduce it anymore.,0
+"Ah, HA!",0
+All I'm trying to say is that it's pretty easy to end up in propagation failure hell here or change something else that blows things up for use cases that are not foreseen.,1
+"Also, your username was stupidly named and confusing, so I deleted it and created a new one more appropriate.",1
+and close this issue ?,0
+"And PayloadTermQuery lost an ""if (includeSpanScore)""?",0
+Any objections to committing the security.rb part from the trunk patch to the 0.95 branch now?,0
+"Anyway, created a patch ...",0
+"Are there other parts of your app that
+interact with or manipulate the ""course"" bean or its ""labKits"" collection?",0
+"At least it was intuitive for me, and I am pretty new to all this.",0
+Bad.,1
+batch transition to closed for remaining resolved bugs,0
+Both equally bad.,1
+bq. this is solr's fault by having a getter that does some heavy duty xml shit.,1
+But I didn't get any memory errors.,0
+But I still try and police it because I think its important.,0
+But I'd have to play with it some to see for certain.,0
+"But in any case, please keep things simple and stupid :)",0
+But please don't say that my reasoning is bad - because it is not.,1
+but there is no such limitation in the consistent algorithm behind ZK.,0
+Can this be closed?,0
+"CASE_SENSITIVE boolean=> TRUE
+9.",0
+Closing all 1.6.0 issues,0
+Contributed by Ashish Singhi.,0
+Damn !,1
+Damn maven!,1
+Damn...,1
+Damn...,1
+"Django is a fullstack framework, Click is not.",1
+Does this suck?,1
+Doh!,0
+"Doing things based on an organizationPartyId associated with the user is BAD BAD BAD, and basically kills the multi-organization support in OFBiz.",0
+"Don't hate me, just throwing this out there.",1
+"duplication of such a small amount of trivial code is far less evil than yet
+another dependency.",0
+"durrrh, that sucks.",1
+"Filling diags.log is bad mojo, since it's never rotated.",1
+"First, there are some backwards compatibility concerns.",0
+"For the first part, I got stuck on two points.",0
+For those of us who don't care about ivy in fact lose something - a easy to build hbase.,1
+Forget the patch for the moment.,1
+"gcc 4.3.1 is out since June 2008, so the workaround is no longer needed.",0
+guys... this is so stupid...,1
+Hell or high water.,1
+Here is quite bad.,1
+Here is quite bad.,1
+HOLY SHIT!,1
+"However, I doubt that the same is true for MapContext because it is just a wrapper around a HashMap.",0
+"I abbreviated the heck out of my arguments and thinking, but damn it thats what I think :)",1
+"I agree with Sami that this should be contributed to Tika and that we delegate the language identification handling in Nutch to Tika, just as we are doing or planning to for the MimeType and the parsing",0
+"I did try some variations as well, and I have to say I only got confused.",1
+"I don't want to put too much magic in the classloader structure, because it becomes messy as hell in an instant.",0
+I fixed some bad markup in r1392857 but I can see the error afterwards on the neko stuff.,0
+"I have stupidly deleted the original test dir, but judging from the suite's output files, no output was created after 3 1/2 hours.",1
+"I just applied the patch, ran tests.",0
+I just hate having no clue what a file is really depending on ;),1
+I must admit I'm a little confused by this one.,0
+I really don't care.,1
+"I think the bnest solution is (2), because the UP value is supposed to be valid - it has successfully been parsed when the first request arrived -.",0
+I think the correct resolution is to ensure that the prefix stack mechanism gets reset each time the XMLReader is used.,1
+I think we should distinguish between the two,0
+I thought that there are some common cases like tail and head caching or exclusion of columns that could be implemented.,0
+I will appreciate if anyone knows of a way of doing that in junit framework.,0
+I will make the change for 2.2.,0
+I'll have to bisect the revision since when it is broken and this could take some time.,0
+I'll just put fix in under this issue.,1
+I'm an idiot.,1
+I'm an idiot.,1
+"I'm assuming it's bytes since the variables are named 'buf', as opposed to the 'str' names used in the protocol APIs, but want to double-check.",0
+I'm confused.,1
+"I'm going to jump back to Robert's initial pushback here:
+""1.",0
+"I'm new to Spring Integration, so forgive me for the stupid things I might say.",0
+"I'm reopening the issue, and Graeme will attach a new key which should be an OpenSSH SSH2-DSA key hopefully.",0
+"If I can give you one advice on this one, I'd say this: fuck Derby, use H2 instead as the default embedded database.",1
+"If I get to this first I will make the ""frameworks"" fix as well.",0
+If I put my hands in the code to fix stuff myself I will probably introduce something that is illogical for you (e.g.,0
+"If we're so bent on backcompat, I suggest deprecating one of these methods now and removing it in next major release.",0
+"In the past, I have enjoyed working with everyone here.",0
+Indeed that would be VERY bad design.,1
+is anybody taking care of this?,0
+It appears to be a simple cast to the wrong type (from a copy/paste error during coding).,0
+It is pretty close to what you are proposing.,0
+"It may cause conflicts, but if your intent is to break system security, you probably don't care.",1
+It will be taken care as part of HADOOP-7642.,0
+It's great to see you've gotten the ball rolling Chris.,0
+it's not a merge setting and I think it's rather confusing today since we take the merge setting and use it for indexing.,0
+"Jeremy, are you still planning to take a stab at this?",0
+Logic like that has nothing to do with GroovyShell in my eyes.,0
+Looking forward to your patch.,0
+"Marvin, I've clogged these lists too often today, so I'll just say this to you.",0
+Maybe first see the results of the discussion at: http://www.nabble.com/Undocumenten-constraints---consistency-of-templates-td21863067.html,0
+Maybe we're stuck with it until log4j fixes its dependencies?,0
+"Maybe you want to do shuffle in this way: Firstly, copying remote map outputs and store the shuffled segments into memory as usual.",0
+More tomorrow.,0
+"Moreover, there must be something going wrong in relation to the SPO index, an exception is thrown:
+ERROR **** Not the root: 11264
+com.hp.hpl.jena.tdb.index.bplustree.BPTreeException
+at com.hp.hpl.jena.tdb.index.bplustree.BPlusTreeRewriter.packIntoBPlusTree(BPlusTreeRewriter.java:78)
+at com.hp.hpl.jena.tdb.store.bulkloader2.CmdTDBLoader2.createBPlusTreeIndex(CmdTDBLoader2.java:224)
+at com.hp.hpl.jena.tdb.store.bulkloader2.CmdTDBLoader2.exec(CmdTDBLoader2.java:166)
+at arq.cmdline.CmdMain.mainMethod(CmdMain.java:85)
+at arq.cmdline.CmdMain.mainRun(CmdMain.java:47)
+at arq.cmdline.CmdMain.mainRun(CmdMain.java:34)
+at com.hp.hpl.jena.tdb.store.bulkloader2.CmdTDBLoader2.main(CmdTDBLoader2.java:95)
+I don't see why, at the moment.",0
+"Move startTime from DecommingStatus to DatanodeDescriptor so startTime could be used to represent either decommissioning or dead start time;
+2.",0
+My bad.,1
+My bad.,1
+My bad.,1
+My bad.,1
+My bad...,1
+"Not ideal, but not too bad ;)",0
+"Not only it's the first one in my life I'm seeing multiple ways of closing the same thing, it also conceals programming errors.",1
+"Nothing gets broken, but we have one more step towards framework independence.",0
+"now that i've made the tests fail, i can finally start trying to figure out why the tests fail.",0
+"Of course, none that should really matter .",0
+"Of course, there is no NotNullException.",0
+"Of course, this only applies if someone where to finish 831 and it where accepted...",0
+"Oh, my stupid:)",1
+Ok here is a patch that works. I was stupid enough not to see it...,1
+"OK, done, added some more javadocs as well.",0
+"OK, this solution sucks, and since people are relying on these scripts instead of using tools like ant, we need to give them the ability to upgrade these tools without having to create a new project.",0
+"OK, works for me.",0
+"Okay Edward, you haven't understood how it works.",0
+"Once all the chunks have been uploaded, the Upload Framework can returned a combined file.",0
+Or did you see some other errors or bad weinre behaviour?,0
+Otherwise the HTable and the HConnection will get very confused.,0
+"Patrick,
+I can't manage to reproduce this error.",0
+Please play around with it.,0
+Please pull it up to the release branch.Thank you!,0
+"Please use git diff to generate patch, because I can't easily apply git patch on a svn tree.",0
+"Plus, of course you don't have to hardcode the name of the jarfile.",0
+Pretty fancy.,0
+Pretty much every deserialization error shows up as an IOException.,0
+Pretty much everything that FSNamesystem (ie.,1
+Previously we are mainly focus on trunk failures.,0
+Pull it back in if you think different.,1
+Pull it back in if you think different.,1
+"Same for the settings.xml with cleartext password (this caused my initial 401 problem, no way in hell im leaving such a thing around on my computer).",0
+"Secondly, most point-release upgrades people do are ones in which the config stays the same.",0
+"Shit, I missed a cast.",1
+should the following be true?,0
+"Since I screwed up the commit, we voted 2.1.7 down and are working to get 2.1.8 out pretty quickly.",0
+So to prevent a rude awakening for some users it might be cool to provide some means (config or whatever) that works similar as the current version.,0
+"So, the original problem appears addressed (as I said, the 3 failing tests now pass), but I will investigate these behaviors, and run on another type of machine just to be safe.",0
+"So, who should create mail lists, bug databases, etc.",0
+"Sounds weird to me...
+Could you package a (totally!)",1
+Submit a patch and I'll play with it.,0
+Tabs are evil.,1
+"Tag is documented and demo'd, but does need a Facelets tag.",0
+Thanks for the info David.,0
+"That irritated the hell out of me too, but I didn't realise it was configurable in the .launch file.",1
+That is bad.,1
+"That said, I had to do something similar in configurators, and I did this by adding wrappers to the getInitParameter.",0
+"That would be a improvement in trinidad, but that doesn't solve the core problem in MyFaces.",0
+That's basically all I am saying.,0
+That's pretty unlikely.,1
+"The ci server does not close issue only comments on them, I closed this issue.",0
+"The KahaDBStore.getDestinations() method looks as though it would be pretty heavy, performance wise.",0
+The latest patch for SimpleURIResolver and resolver framework.,0
+"the logical solution to me was to add the methods to the interface) so I guess I did the right thing opening this bug and asking for your opinion and I can't accept your ""for the sake of sweet Jesus"" in reply.",0
+The outer read can continue for a much longer period of time.,0
+The same exception happens the I forget to sign my jars.,0
+Then you're pretty well screwed.,1
+"Then, what's the story for code reuse for different flushers.",0
+There may perhaps be some way to use Windows file-locking as a signalling mechanism here.,0
+"Therefore Visa.matches() will now
+return ""true"" for Mastercards, too.",0
+Think you could make a failing test case and/or patch to show the behaviour?,0
+This is bad.,1
+This is clearly bad webserver behaviour.,1
+this is IMO a regression since i am pretty sure it used to throw an InvalidItemStateException in the past.,0
+This is weird.,1
+This is where it gets confusing.,1
+This might fix broken hudson on trunk,0
+"This practice in general seems really confusing to me, this bug is refed in the 1.5.0 release notes tagged in svn.",0
+This sucks *so much*...,1
+This was fixed Cassandra-side for 2.0 in CASSANDRA-5702 but the fix was pretty heavyweight and backporting to 1.2.x is not an option.,0
+This whole thing is very distressing to me.,1
+"Though it is still a possibility, it is pretty corner-case.",0
+"Thus, the case is closed as non-reproducible.",0
+"To be quite blunt guys, your log4net logger methods smell bad.",0
+True.,0
+USE WITH CARE!,0
+We are currently stuck with this issue?,0
+We can use a BlockingQueue to make the patch simpler,0
+We have different disk sizes on our DNs.,0
+We need verify all the links and buttons in console to ensure the fix.,0
+Weird.,1
+"Well, either you query the database every damn time, and your plugin/tool/code will be super slow.",1
+"Well, that sucks.",1
+What a stupid name I chose for that object... )-:,1
+What if you want to change this binary format?,0
+What the hell are you waiting for ?,1
+"why on earth would it match anything, you have not even touched the Apache install.",1
+"Yep, my bad.",1
+You can close this out.,0

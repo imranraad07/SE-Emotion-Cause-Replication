@@ -1,0 +1,233 @@
+text,label
+"""eVe"".",0
+(for ex.,0
+[~ikelly] are you trying the right patch?,0
+"[~sershe], please bear with me - (1) could you please upload a rebased patch.",0
+"[ext]"" so we should fullfil the requirements for the atomic operation.",0
+"@mahadev - I would love to help test a patch :) I'm currently using 3.3.1 + ZOOKEEPER-744 + ZOOKEEPER-790, applied in that order.",1
+"* packages, meaning that Xerces-J 2 is not 100% Pure Java (it depends on a specific aspect of specific versions of *Sun* JVMs).",0
+"+1
+before committing, do you mind combining the new test with one of the existing ones?",0
+"+1
+Looks good to me.",0
++1 (subject to hudson),0
++1 for the patch.,0
++1 on the patch.,0
++1 to what Esteban said.,0
+"+1, in my mind, the -ROOT- table is very important of routing the right RegionServer of .META.",0
+"+1, the latest patch looks good to me.",0
+A workaround for this issue is to use entity resolver.,0
+"Aha,, thanks for the information. That makes sense. Glad to hear that it helped! :)",1
+aim to merge patches and publish for review by this coming weekend,0
+"Alexei, this patch is quite out of date (sorry about that).",0
+Also please list what manual steps were performed to verify this patch.,0
+"Also, when do you plan to take up AMBARI-1843 for adding the unit tests?",0
+An email snafooey caused us to update our JIRA instance to 6.1 before we had a chance to test the import on our test instance (it didn't work properly for those who tried to whack at it).,0
+Any objections?,0
+Applied jackrabbit-core patch in revision: 949724,0
+Applied patch with thanks to Christian.,0
+"Applied, thanks!",0
+Are there snapshots of the volumes belonging to the VM?,0
+"Assume the PUT(and related things) that i created in preBatchPut is also needed while i use the preWALWrite, is there any way i can carry it in one flow?",0
+Attach patch v2.,0
+Attaching the 10 findbugs reports for common and the various hadoop-tools projects and hadoop-auth.,0
+"Best regards,
+Andrew",1
+"Best regards,
+Jimmy",0
+"Best regards,
+Richard",1
+"Best regards,
+Richard",1
+"blindly changing the oak security provider to private SecurityProvider securityProvider = new SecurityProviderImpl();
+gives Tests run: 706, Failures: 0, Errors: 122, Skipped: 13",0
+"But we know a lot about docids, and extra hashing should just lead to an average-case slowdown.",0
+But when i delete the file which was created at <tomcat-home>/bin/search-index/write.lock it works fine but I'm not sure whether this creates other implications?,0
+"Changes appeared in 10.8.1 documentation, so closing.",0
+Committed revision 642996.,0
+Committed the patch to trunk (revision 63660) and branches/2.1 (revision 636606).,0
+"Committed to trunk and flume-1.4, rev: c0c4947.",0
+Committed to trunk.,0
+Committing now..,0
+Common has 100 or so warnings and there's a couple dozen spread out around the others.,0
+Consolidate all error handling in KafkaServerStarble.,0
+Contributed by Mahadev Konar.,0
+"Converting to the new method, we'd have to run a migration on startup changing the content in meta.",0
+could we get rid of normal?,0
+Could you supply also a webapp sample?,0
+"Created an attachment (id=10304)
+test.xml",0
+"Created an attachment (id=12292)
+corrresponding patch for LocalStrings.properties - will provide more as I encounter them",0
+"Did you intend to combine our patches, or is your patch incomplete?",0
+do we really need this?,0
+Doc update to correct FQCN.,0
+Does it looks like if I call that on the log that it will put split it and put the data into the right place?,0
+EventListeners and CacheLoaders are documented.,0
+Executing /stop on a running EC2 instance will terminate the instance.,0
+Fixed in LUNI module at repo revision r598681.,0
+Fixed in rev 1137251 and 1137252.,0
+"fixed in revision 413841
+Boris, please check that it was applied as expected",0
+"For the second issue:
+Consider long tailed distribution as shown on http://en.wikipedia.org/wiki/Long_tail (In case of network traffic.",0
+Further I think the tags are not saved any ware because after redeploying I found the tags I added are missing.,0
+Fxied and regression test written,0
+h2108_20110727b.patch: fixed DatanodeManager constructor and activate(..).,0
+Has anyone opened an issue at http://bugs.sun.com yet?,0
+Have you run test suite ?,0
+"HBASE-2531 ""32-bit encoding of regionnames waaaaaaayyyyy too susceptible to hash clashes"" proposes changing the randomid so that it contains actual name of the directory in the filesystem that hosts the region.",0
+"Hi Andrus
+I cleaned up for one of our projects successfully the comments and could import it into CayenneModeler - great!",0
+"Hi Henry, Thanks for checking it out.",1
+Hi Kevin - Any update on this.,0
+Hi Knut I am interested in taking up this task.. Is that fine and kindly direct me on where to start off here.,0
+Hi Mario Ivankovits Pls give some suggestion on above comment,0
+"Hi Sagara,
+Thank you very much for looking into this.",1
+"Hi Uma, thanks for taking a look.",0
+"Hi,
+Would you please try my patch?",0
+"Hi, did you check the snapshot?",0
+Historically that's been Writable and SequenceFile.,0
+"How about following the naming from Math.min() and Math.max():
+public static Date min(Date date1, Date date2);
+public static Date max(Date date1, Date date2);
+Alternatively, when I read 'Returnes [sic] the least recent (oldest)"", why not call the methods oldest() and newest()",0
+"However, if that schedule does not work for you, please feel free to take this issue into your queue and go ahead.",0
+"However, on 10.8 it is correct to compile the test against 1.4, so that's not a problem.",0
+"i agree,
+i think there is no wsdl into jms sample component.",0
+I can't apply 0002 cleanly to trunk.,0
+I committed the patch.,0
+"I had a quick look at the ab patch, and nothing jumped at me.",0
+I have committed this.,0
+I have found the source of the problem - yet I completely don't understand why such an unrelated thing breaks navigation.,0
+I just committed this.,0
+I just committed this.,0
+I just committed this.,0
+I love a solution that's simpler and easier to understand than the original.,1
+"I mistakenly thought 10.9 was supposed to work on Java 1.4 (in fact, the 10.9.1 release notes say it is supported, although we removed support for it after 10.8), and the build worked in my environment because I had j14lib set, and the test ran just fine on 1.4.",0
+"I really think there is an added value with this function for Jackrabbit users, I personnally use it with every String-ordered query.",0
+I saw this recently when using a custom built ActiveMQ (5.0.0.9-fuse) with ServiceMix (3.2.1).,0
+"I send you a simple eclipse CXF webservice project using spring, and a simple eclipse CXF client project.",0
+i suggest that we commit this ASAP and then do the work to fix the build once the code is in subversion.,0
+I think the licensing on that one might be complicated.,0
+I updated the wiki doc for the sqs component as well.,0
+I will look at applying this later today.,0
+I would just need to retrieve the backgroundAlpha style before calling drawRect in its updateDisplayList.,0
+I'm going to commit this momentarily.,0
+I'm often running ad-hoc analysis in grunt with snippets taken from some heavier scripts I've written and I get bitten ALL the time.,0
+"If the developer wants to know whether he is using any possibly unstable components, all he needs to do is to glance at the set of import statements on the top - if he's using other classes than org.apache.jspwiki.api.",0
+if this is not a good model - then we should switch it with something different altogether.,0
+If we want to generate similar variable (for ex.,0
+"In any case, why did not the framework try and re execute this map somewhere else?",0
+"In this case, the first OOM occurred here during writing the checksum.",0
+Is that so Ram?,0
+Is this sufficient?,0
+"It is supposed to be handled as part of
+http://issues.apache.org/jira/browse/OPENJPA-907
+There is a patch attached to it (I was a bit liberal with the RegEx).",0
+"It make sense, I am attaching the updated patch.",0
+It should simplify things.,0
+Leaks file handles via IW.getReader(),0
+Let's commit it .Thanks!,0
+"Lets see if someone else votes that they want it and if so, then we'll commit?",0
+Looks good.,0
+Mind adding some comments explaining why this is ok to retry?,0
+Not sure if it is reasonable - is it possible to use the classes from HDFS-4979 here.,0
+Okay.,0
+"On 2008-02-25 15:37:45.766 jchuang commented:
+This is an AIR issue, the AIR team has been notified.",0
+"On 2011-10-26 14:27:36.512 chiedozi commented:
+This would be a very simple change to make.",0
+org/apache/xml/serialize/EncodingInfo.java:0: error: cannot find file for class sun.io.CharToByteConverter,0
+"Our APIs should be of course be general enough that it's possible to incorporate different serialization systems and different file formats, but we needn't provide implementations of all combinations of these, but should rather direct folks towards a primary implementation.",0
+Patch committed.,0
+Patch d1544-patch2-v2.diff committed revision 429036 - Thanks Deepa,0
+Patch integrated to trunk.,0
+"patch to add DynamicAttributesHandler and update SimpleTheme, AbstractCommonAttributesTest, and AbstractTest",0
+Please check it was applied as you expected.,0
+Please check that it was applied as expected.,0
+Please check that it was applied as you expected.,0
+Please check that the patch was applied as you expected.,0
+Please check that this resolves the issue for you.,0
+Please prepare patch for trunk.,0
+Sending to IRB.,0
+Shawn committed the fix in rev 1159269 & rev 1164330,0
+"So, i'm going to make a patch that does 1G regions and 128M flushes (with the multiplier still of x2 so we'll grow to 256M before the barrier comes down).",0
+Sounds good.,0
+"Svetlana,
+Fixed in LUNI java.net.DatagramPacket at repo revision 376009.",0
+Sweet kickstart for our new wiki!,1
+"Sweet! Git, I love git! :)",1
+"Ted, can you reproduce this outside of cassidy.pl?",0
+Test code added as part of HDFS-2131,0
+Thanks,0
+thanks,0
+Thanks [~cnauroth] & [~tomwhite] for the reviews!,1
+"Thanks a lot for the reviews, Todd.",1
+Thanks a lot!,1
+Thanks Andrew - the patch was applied to SQL module at r525019.,1
+Thanks Andrew.,0
+Thanks Bob your patch is in trunk at r932317,1
+Thanks Brock!,1
+Thanks for looking into this Suresh.,1
+Thanks for sweet patch Erik.,1
+"Thanks for taking a look, Jiannan",1
+Thanks for the patch Erik (and Jon),1
+Thanks for the quick patching Donald!,1
+Thanks for the solutionhints.,0
+Thanks for you work on this Jayachandra.,1
+Thanks Hairong!,1
+Thanks Hari!,1
+Thanks Ilya.,1
+Thanks Martina.,1
+"Thanks Oliver, that's fixed it.",1
+Thanks senaka for the patch.,1
+Thanks Sijie.,1
+"Thanks Todd, glad to be on board!",1
+"Thanks,
+Arvind",1
+"Thanks,
+rev.",0
+"Thanks, correctly applied the patch and updated working copy.",0
+"Thanks, is that everyone has to create an account and then you will link them to Pig Confluence?",0
+"Thanks, JinJie!",1
+"Thanks, Myrna.",1
+"Thanks, Sravya!",1
+Thanks!,0
+Thanks!,0
+Thanks.,0
+Thanks.,0
+That is correct.,0
+"That method, which inverts a single document, was replaced with new code starting with 2.3, so it's possible you can workaround the bug by upgrading to 2.3 or 2.4.",0
+"that what WebRenederendingServices are for, not sure WebDescriptionProvider could be declared to be a WebRenderingService.",0
+"The idea behind this is largely the same as with our existing package structure - there is nothing technical in preventing *everything* to be in the org.apache.jspwiki -namespace (with no subpackages), but both aesthetics and experience tell us that it just makes sense to add subpackages to make class management easier.",0
+The patch does not contain any @author tags.,0
+The patch looks fine.,0
+The patch looks fine.,0
+The rest of the TODO has been postponed to Camel 2.0 in CAMEL-971.,0
+The target {{inject-system-faults}} is defined in src/test/aop/build/aop.xml,0
+The whole system could be out-of-service in case the Region of SequenceFile of the -ROOT- can NOT be opened.,0
+These 3 crashes happen while compiling DocumentWriter.invertDocument.,0
+These blockers and critical issues are resolved but not verified.,0
+This a patch submitted by Ankur Goyal.,0
+This issue is fixed.,0
+This makes the test do the same where it matters.,0
+This should (and can) be automated.,0
+This should have been fixed already.,0
+Thx for your investigations Chet.,0
+Updated MR App to reflect YarnRemoteException changes after YARN-634.,0
+Verified.,0
+"We are using this pattern ""${ivy.dir.pattern}/[revision]/[artifact].",0
+We can avoid one case of failure.,0
+We do not have to block this jira on the unit tests but we should probably try and get that in sooner than later.,0
+We would just add ensureOpen() to those methods and make them public.,0
+"When I put this patch it did not have this issue,Let me update the patch.",0
+Works fine and the way i (and w3c) wants it now.,0
+"Wow, that was quick!",0
+Yeah that one (TestAtomicOperation) has me worried a bit.,0
+"Yes, it seems that in some cases the exceptions are swallowed and e.printStackTrace() is heavily used.",0
+"Yes, we could enable junit's fork mode.",0
+"Yup, it does the trick.",0

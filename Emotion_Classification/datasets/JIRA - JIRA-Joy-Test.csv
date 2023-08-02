@@ -1,0 +1,239 @@
+test,label
+"For my larger suppliers, I will often have a 100 or more requirements built up.",0
+"Since the ""Approved Requirements"" screen paginates the requirements, I'll end up generating multiple orders for the same (large) supplier, simply because the application operates a page at a time.",0
+This annoys my suppliers a bit.,0
+"I guess the obvious thing to do is to go in and reconfigure the pagination so it doesn't (paginate), but if we had the ability to add items to existing POs then you could still use the pagination mechanism and build up the PO page-by-page (quite handy if your working through  your POs during less busy times of the day).
+
+",0
+This should have been fixed by commit 26a5b76ee6b77909a7b8d5b00924f12e1671373d.,0
+"Verified on my vmware setup, extract volume is working fine now.",0
+"I did that first, but then remembered that when I did that in the past, people were unable to apply my patches, w/o doing the svn move themselves.",0
+"Anyway, for this file it's not really important I think - a very simple and tiny file, w/ no history to preserve?",0
+"Please keep this open until reverse tests are configured, as we might have new issues coming from them.",0
++1 on patch.,0
+"@Andrei:
+Please re-attach patch using --no-prefix option.",0
+HadoopQA uses -p0 to apply patches.,0
+"Ok, got it, thanks for the explanation.",0
+"In any case, the code for the toBytes method is written now, so it should be a simple thing to move it to the PType implementation classes.",0
+"It would probably also be worth having optimized versions for primitive values, instead of writing them to an Avro/Writable first to get the bytes representation.",0
+"But yeah, that's for another JIRA.",0
+An example patch.,0
+"Was unable to run the unit test I wrote (because my setup is being a jerk), but I'm more looking for input on the design.",0
+"Thanks for the reviews, committed the patch to trunk",0
+"Zdenek,
+
+Thank you for working with these components.",0
+"I seem to be having trouble applying the patches, though, and I'd hate for all these corrections and improvements to be lost.",0
+Do you think you could submit a new patch in a single file (perhaps named with the current date) based on the current SVN head ?,0
+That would really help a lot.,0
+Rest of Ender's patch was applied.,0
+"It is good to know that pluto has a problem here, but I realy need servlets integrated pluto.",0
+@Arnaud: My key looks exactly the same and was generated with Cygwin's ss-keygen.,0
+"The file has Unix line endings though ...
+
+@Lukas: scpexe works for me with M2 despite the fact that it insists on a key even if an agent is running (WAGON-27).",0
+Do the same tests work fine on 1.5.0dev?,0
+"One of the things I changed in jnr-posix, was to make stat and fstat use stati64 and fstati64 respectively, instead of stat64 and fstat - the last may be why its breaking with jna-posix.",0
+"Look in WindowsLibCFunctionMapper.java for the fstat mapping - it may all magically work if you change fstat to map to _fstat64 (note: no 'i' in the name - uses stat64 struct instead of stati64 ... they have different sized atime, ctime, mtime fields).",0
+"Otherwise, the WindowsFileStat structure looks ok, apart from the st_blocks and st_blksize fields at the end, which are not part of the windows stat64 struct, so will probably be filled with either zero, or garbage.
+
+",0
+Awesome. Thats great to hear!,0
+"{quote}
+
+Hmm, looks like the backport blew away scrubtest on 1.2 as well.",0
+Oversight?,0
+"{quote}
+Yes, was an oversight.",0
+"Just for clarification, skipBloomFilters is old.",0
+#1 and #2 are incorrect.,0
+1: The skipBloomFilters gets called on the index file in RowIndexEntry line 104.,0
+"2: In 2.0, the skipBloomFilters will be called on a 1.2 sstable; also, the skipBloomFilters currently is called against any sstable when scrubbing.",0
+I made a preliminary patch to share the idea how this can be fixed.,0
+"- This fix works if I run a ""mahout"" from command line against a Hadoop cluster.",0
+"A unit test case doesn't work; -Dkey=value is not parsed in ToolRunner but passed through to SparseVectorsFromSequenceFiles, resulting in a parse error.",0
+Did I make any mistake?,0
+Maybe because a JUnit doesn't really mimic a real hadoop env?,0
+"- I was not sure about the convention of function parameter order, i.e., F(a,b,conf) or F(conf, a,b), but I just followed DictionaryVectorizer.createTermFrequencyVectors that places Configuration parameter after Paths.",0
+"IMHO, Configuration should be the first or the the last arguments.",0
+"It looks like there is something about the build scripts that is causing it, because hdfs.proto, where NameSpaceInfoProto is defined, is more or less identical between trunk and branch-2.",0
+Looking forward to using it.,0
+I just committed this.,0
+Please submit new issues for the other aspects of this that remain unfixed.,0
++1  Patch looks nice.,0
+Probably worth adding a third case in testDataDirectories for a URI that includes an authority (file://localhost/path).,0
+I've committed this.,0
+Resolving as fixed.,0
+I ran it on current trunk.,0
+"It successfully gets the expected exception, but then fails to close FSNamesystem with NPE.",0
+So yes it fails but not where you wanted it to.,0
+Please open using the JIra workflow and fill in the details.,0
+"we improved hash handling in Railo, but we get not the same result with non ascii characters as ACF (with ascii characters everything is fine).",0
+"we cannot find a problem in our implementation anymore, perhaps there is a problem in he ACF implementation that force a other resultat.
+",0
+This looks like it might be a blocker for release.,0
+I didn't see anything in subversion?,0
+"new version of 01 ""minifies"" type classnames for the standard o.a.c.db.marshal types",0
+"Ok, thanks.",0
+Fixed in r1146573,0
+"Hi Christian, Jacopo,
+
+Not sure if adding ""-Duser.language=en"" is the better way to go, sounds like a camouflage to me.",0
+I just committed this.,0
+Closing issue as per Luis.,0
+Added support for the QueryElevationComponent and test case.,0
+Or do we act like we always had it?,0
+Thanks for the feedback and thanks for taking a stab at this.,0
+won't fix.,0
+"Hi Robbie,
+
+Please could you review this patch?",0
+cheers Keith.,0
+"<danielsh> dns done (thanks for the hostname), tb build underway
+",0
+Committed to trunk.,0
+"Marco,
+
+I've fixed some minor issues in your patch (including the one you have pointed out) and I've committed it.",0
+"Hi Guys,
+
+I am pretty new to this site.",0
+I am wondering when this patch can be accepted?,0
+"Thanks,
+
+Kevin",0
+Applied the patch into trunk.,0
+I just committed this.,0
+Violated again in r960471.,0
+"
+I'll take a look at this for the next release (after 1.5.11).",0
+Committed to trunk (0.12).,0
+Thanks Viraj and Cheolsoo.,0
+[~maysamyabandeh] Got time to look at this today.,0
+"There are tests in Mahout-integration that are using DummyRecordWriter  -  TestConcatenateVectorsJob and RegexMapperTest, and are failing with this patch.",0
+I'll take a stab at this again but could you verify this patch against the present trunk?,0
+patch applied.,0
+Thanks!,0
+How about a slightly different take?,0
+Please take a look at the patch and let me know if it fixes the problem for you.,0
+Vadim you're keeping us busy :).,0
+"Hello, I see Uwe has commented on SOLR-1657 that he would help convert tokenstreams to the new api, but he needs this patch (the tests) applied first.",0
+Is it possible for someone to take a look at this patch to get things moving along?,0
+"its only tests, no source code changes.",0
+"Leo, thanks for the patch - applied at r488522.
+",0
+I did translate some Labels to german language.,0
+fPIC rings a bell on amd64.,0
+"What are the disadvantages to adding -fPIC (a) for amd64 only, (b) for all platforms?",0
+This is fixed in V2 and an automated regression case has been created.,0
+Closing,0
+Thanks Sanjay for the review.,0
+I have committed this.,0
+(My 0.8 checkout was on the 0.8.6 tag when I reported that CliTest worked completely.),0
+I committed this.,0
+Patch checked in.,0
+Thanks for the patch.,0
+It has been applied to the trunk.,0
+I'll commit this soon unless there are objections.,0
+Thanks for the patch Glen.,0
+I'm gonna review it and apply.,0
+Can this be closed Martijn?,0
+Committed to trunk 1384014,0
+"Resolved, fixed!",0
+Please review this for me!,0
+Thanks!,0
+This is not a Camel issue but a CXF.,0
+committed.,0
+"(looks like these were introduced in CASSANDRA-1714, fwiw, so i'm going to tag affects-version to 0.7.1)",0
+"Released with GEP 221, so I close this JIRA.",0
+Untar this to populate the position_hints table.,0
+Change the summary to match the real issue.,0
+You are absolutely right.,0
+There must be some side effect in my project that circumvented this problem until 6.8.0.,0
+"Sigh ....
+
+Do you think that is something that can be fixed in Wicket or some kind of IE8 madness that i should look to solve on my side?",0
+Edison can you check on this issue looks like the fix is not working,0
+Committed with rv800094,0
+Patch for aggressive GC test,0
+OK to close?,0
+"Oracle 7u40 runs just fine on Debian, I can't imagine it wouldn't work on Ubuntu.",0
+Tested with both JBoss EAP 5.x and Geronimo 2.2.x,0
+Fixed in 426832.,0
+"you seem knowledgeable,
+what not submit a patch.",0
+Applied to trunk.,0
+I just committed this.,0
+"Thanks, Jothi!",0
+I've just committed this.,0
+resolved in r950171,0
+If possible can you make sure the patch is checkstyle compliant?,0
+Resolved in 1.0.1-SNAPSHOT.,0
+Committed to trunk with revision 447502.,0
+Will leave open until merged to 10.2,0
+Committed to 3.4.6 and trunk.,0
+This patch has been improved a lot.,0
+What classes were changed for this fix?,0
+Would like to pick up this fix with the stable release if possible.,0
+"My testing turns up not issues, so , once again, thanks for finding this Rick, I'd gone blind to the problem and it was driving me mad!",0
+"Enis/Ashutosh, we can try coming up with the testcase.",0
+"But, in the meanwhile, can I upload a patch which reverts this ?",0
+"dead branch, no sure which code generator it's talking about",0
+Patch is committed to trunk.,0
+"Btw, I only get this error in LDAP Studio.",0
+Not in LDAP Browser 2.8.2 or MS AD Explorer.,0
+Thanks.,0
+TestSkewedJoin finishes when you give it enough time (a mere 49 minutes) and the other tests I ran passed as well.,0
+"Milinda, patch applied !",0
+Zhenxiao I left comments on Phabricator.,0
+"Hi Sergey, thanks for the patch.",0
+But why have you added testPropertyChangePropertyChangeEvent test?,0
+Or at least has some relation to above problem?,0
+I will revert tomorrow if less-hacky alternative suggested above continues unaddressed.,0
+Your explanation sounds reasonable and  the patch looks safe to me.,0
++1 for the patch.,0
+After talking with Steve B. we decided that the DAS should insist that datagraph root is passed to the ApplyChanges command.,0
+An error is now thrown if this is not the case.,0
+The fix for test_no_extension was merged in PIG-2505.,0
+So this is ready for merging?,0
+This is now resolved in ActiveMQ 4.0 as we have a DemandBasedForwardingBridge which only forwards messages to another broker when there is a consumer for it,0
+"Jacques,
+
+Why concatenate the patches?",0
+"Thanks guys,
+
+Bharat your patch is in trunk at revision: 754834 .",0
+I only review as Pranay tested successfully.,0
+Should we close this one now that we went a different route (zero javadoc warnings?),0
+Thanks for the clarification.,0
+"> - FOUserAgent.getStream() is cool and very easy to use (now that it's properly
+> documented).",1
+"i kinda like the black acctually .. but that may largely be due to my prefering the ""fire"" solr logo over the futuristic magnifying glass (the red/orange contrasts nicely with the black/grey.
+
+to my mind, the ""Solr"" ""Sun"" connection has allways been really cool ... ",1
+Awesome discussion.,1
+"Got it, thanks for the explanation.",1
+The patch looks good.,1
+Cool cool - thanks stack!,1
+Awesome! This tool is cool.,1
+Thanks guys for saving mankind!,1
+This looks safe also,1
+I've just tested the shiro trunk with karaf-2.2 release and everything works fine :),1
+Pretty sure this was fixed by the time we released JRuby 1.6.,1
+"Interesting, I just replaced my src with the latest in the trunk and did a compleatly clean build and the problem seems to have gone away.",1
+This is Awesome Stefan - thanks a million!,1
+This is awesome - works in a one-liner.,1
+Awesome!,1
+"Nice, I did not think about using the system tables.",1
+"You're results are awesome Paul. Great work :)
+Looking forward to see your new JSON parser in trunk whenever you think is ready.",1
+"Awesome, you rock, Drew!",1
+Very cool.,1
+Awesome speedup! Finally all this work shows great results!!,1
+"@Subbu:
+Glad I was able to help.",1
+I believe in relativity :-),1
+Great! It's been good to be able to contribute and I hope to be able to more for this awesome project when I have the spare time.,1
+Thanks Uwe!,1
+Code looks cool.,1
