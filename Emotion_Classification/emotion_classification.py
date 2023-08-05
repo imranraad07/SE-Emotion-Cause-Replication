@@ -196,20 +196,11 @@ def main():
     batch_size = args.batch_size
     col = args.col
     model_name = args.model_name
-    contrastive_flag = args.contrastive_flag
-    path_to_contrastive_weights = args.path_to_contrastive_weights
     output_file = args.output
     train_file = args.train_file
     test_file = args.test_file
 
-    # Check if contrastive_flag is 1 and path_to_contrastive_weights is not provided
-    if contrastive_flag == 1 and path_to_contrastive_weights is None:
-        raise ValueError("If contrastive_flag is 1, path_to_contrastive_weights must be provided.")
-
-    if contrastive_flag == 1:
-        output_file = model_name + '_' + col + '_contrastive_' + output_file
-    else:
-        output_file = model_name + '_' + col + '_' + output_file
+    output_file = model_name + '_' + col + '_' + output_file
 
     print("Epoch:", epochs)
     print("Delta:", delta)
