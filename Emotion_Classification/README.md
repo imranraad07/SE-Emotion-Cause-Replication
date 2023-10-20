@@ -52,12 +52,11 @@ The script will print the training progress, average training loss, average vali
 
 # How to run SotA models:
 
-Of the three tools we used, two of them are open-source and available here:
+Of the three tools we used, two of them are open-source and available here. You need to follow their instructions to run the models:
 
 - EMTk: https://github.com/collab-uniba/Emotion_and_Polarity_SO
 
 - SEntiMoji: https://github.com/SEntiMoji/SEntiMoji
-
 
 - ESEM-E: We have read carefully the instructions provided by Murgia et al. and as they suggested, we have used SVM as model. To run esem-e from command line use the following command:
 
