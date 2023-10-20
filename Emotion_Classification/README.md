@@ -49,3 +49,7 @@ The script will print the training progress, average training loss, average vali
 - Ensure you have the appropriate training data for emotion classification in the CSV format, with one column containing the text data and another column containing the corresponding emotion labels.
 
 - Ensure that your system has access to a CUDA-enabled GPU if you want to use GPU acceleration for training. The script automatically checks for GPU availability and uses it if available.
+
+# How to run SotA models:
+
+We have followed the instructions provided by Imran et al. on how they replicated the models [17]: https://anonymous.4open.science/r/SE-Emotion-Study-0141/
