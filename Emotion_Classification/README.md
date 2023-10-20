@@ -52,4 +52,17 @@ The script will print the training progress, average training loss, average vali
 
 # How to run SotA models:
 
-We have followed the instructions provided by Imran et al. on how they replicated the EMTk, SEntiMoji and ESEM-E models [17]: https://anonymous.4open.science/r/SE-Emotion-Study-0141/
+Of the three tools we used, two of them are open-source and available here:
+
+- EMTk: https://github.com/collab-uniba/Emotion_and_Polarity_SO
+
+- SEntiMoji: https://github.com/SEntiMoji/SEntiMoji
+
+
+- ESEM-E: We have read carefully the instructions provided by Murgia et al. and as they suggested, we have used SVM as model. To run esem-e from command line use the following command:
+
+`python eseme.py --train_file train/file/path --test_file test/file/path --emotion emotion`
+
+Example:
+
+`python eseme.py --train_file datasets/SOEmotion-Train.csv --test_file datasets/SOEmotion-Test.csv --emotion Anger`
