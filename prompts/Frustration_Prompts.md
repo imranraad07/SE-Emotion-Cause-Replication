@@ -5,7 +5,7 @@ Your task is to detect whether Frustration aroused in you while reading the utte
 
 Utterance: \<insert utterance\>.
 
-If there is frustration in the text, write No. Otherwise write exactly Yes.
+If there is Frustration in the text, write Yes. Otherwise write No.
 
 ## Step 2: Frustration Cause Detection
 
