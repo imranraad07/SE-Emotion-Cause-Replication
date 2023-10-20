@@ -52,4 +52,4 @@ The script will print the training progress, average training loss, average vali
 
 # How to run SotA models:
 
-We have followed the instructions provided by Imran et al. on how they replicated the models [17]: https://anonymous.4open.science/r/SE-Emotion-Study-0141/
+We have followed the instructions provided by Imran et al. on how they replicated the EMTk, SEntiMoji and ESEM-E models [17]: https://anonymous.4open.science/r/SE-Emotion-Study-0141/
